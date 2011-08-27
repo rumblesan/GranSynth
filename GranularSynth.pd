@@ -1,0 +1,8 @@
+#N struct 1018-symarray float x array symbols 1018-sym;
+#N struct 1018-sym symbol name float on;
+#N canvas -1393 146 712 563 10;
+#X floatatom 178 73 5 0 0 0 - - -;
+#X obj 178 110 sampleBank samples samplelist;
+#X obj 373 226 grainvoices 8 GrainPlayer;
+#X obj 107 326 GrainPlayer;
+#X connect 0 0 1 0;
