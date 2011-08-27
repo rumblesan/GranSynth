@@ -1,4 +1,4 @@
-#N canvas -1615 171 1412 763 10;
+#N canvas -1663 116 1412 763 10;
 #X obj 101 185 /~;
 #X obj 101 213 *~;
 #X obj 214 674 outlet~;
@@ -29,8 +29,8 @@
 #X obj 397 366 +~;
 #X obj 100 323 +~ 0;
 #X obj 240 560 +~;
-#X obj 1144 327 paramsend \$0 name;
-#X obj 1144 402 paramsend \$0 position;
+#X obj 1065 448 paramsend \$0 name;
+#X obj 1065 523 paramsend \$0 position;
 #X obj 513 181 line~;
 #X msg 513 160 \$1 20;
 #X obj 869 199 line~;
@@ -39,10 +39,10 @@
 #X obj 679 166 s \$0-name;
 #X obj 679 116 list prepend set;
 #X obj 679 141 list trim;
-#X obj 1144 427 paramsend \$0 pan;
+#X obj 1065 548 paramsend \$0 pan;
 #X obj 1029 189 / 60;
 #X obj 1029 213 s \$0-speed;
-#X obj 1144 352 paramsend \$0 speed-mod;
+#X obj 1065 473 paramsend \$0 speed-mod;
 #X obj 120 154 r~ \$0-grainlength;
 #X obj 131 398 r \$0-name;
 #X obj 427 368 r \$0-name;
@@ -65,21 +65,25 @@
 #X obj 241 629 e_pan;
 #X obj 268 605 r \$0-pan-set;
 #X obj 279 674 outlet~;
-#X obj 1144 452 paramsend \$0 attack;
-#X obj 1144 477 paramsend \$0 decay;
-#X obj 1144 502 paramsend \$0 sustain;
-#X obj 1144 527 paramsend \$0 release;
+#X obj 1065 573 paramsend \$0 attack;
+#X obj 1065 598 paramsend \$0 decay;
+#X obj 1065 623 paramsend \$0 sustain;
+#X obj 1065 648 paramsend \$0 release;
 #X obj 1135 71 r \$0-attack-set;
 #X obj 1159 92 r \$0-decay-set;
 #X obj 1184 112 r \$0-sustain-set;
 #X obj 1209 132 r \$0-release-set;
-#X obj 1144 302 paramsend \$0 notes;
-#X obj 1144 377 paramsend \$0 grainlength;
+#X obj 1065 423 paramsend \$0 notes;
+#X obj 1065 498 paramsend \$0 grainlength;
 #X obj 513 40 r \$0-grainlength-set;
 #X obj 512 204 s~ \$0-length;
 #X obj 412 318 r~ \$0-length;
 #X obj 114 347 r~ \$0-length;
 #X obj 427 341 r~ \$0-pos;
+#X obj 1041 351 inlet;
+#X obj 1112 348 inlet;
+#X text 1116 374 left inlet is grain specific right inlet is for all
+grains;
 #X connect 0 0 1 0;
 #X connect 1 0 9 0;
 #X connect 3 0 5 0;
@@ -171,3 +175,5 @@
 #X connect 78 0 13 1;
 #X connect 79 0 19 1;
 #X connect 80 0 27 1;
+#X connect 81 0 74 0;
+#X connect 82 0 74 0;
