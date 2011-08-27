@@ -1,6 +1,6 @@
-#N struct 1127-symarray float x array symbols 1127-sym;
-#N struct 1127-sym symbol name float on;
-#N canvas -915 117 617 679 10;
+#N struct 1038-symarray float x array symbols 1038-sym;
+#N struct 1038-sym symbol name float on;
+#N canvas -863 138 617 679 10;
 #X obj 59 207 textfile;
 #X obj 59 371 list prepend open;
 #X obj 59 394 list trim;
@@ -10,8 +10,8 @@
 #X obj 59 55 loadbang;
 #X obj 59 229 list split 1;
 #X obj 59 345 list;
-#X obj 186 396 inlet;
-#X obj 121 487 outlet;
+#X obj 180 368 inlet;
+#X obj 120 590 outlet;
 #X msg 100 183 read \$1/\$2.txt \, rewind;
 #X obj 100 113 t b b;
 #X obj 100 137 symbol \$1;
@@ -22,13 +22,19 @@
 #X obj 100 161 pack s s;
 #X obj 59 299 pack s s;
 #X msg 59 321 \$1/\$2;
-#X obj 121 465 list trim;
+#X obj 119 556 list trim;
+#X obj 180 389 t f f;
+#X msg 207 410 size \$1;
+#X obj 128 524 pack s f;
 #X obj 121 443 u_multisamplebank \$0-samples;
+#X obj 143 47 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 224 484 \$2;
 #X connect 0 0 7 0;
 #X connect 0 1 4 1;
 #X connect 1 0 2 0;
-#X connect 2 0 22 0;
-#X connect 3 0 22 1;
+#X connect 2 0 25 0;
+#X connect 3 0 25 1;
 #X connect 4 0 0 0;
 #X connect 5 0 4 0;
 #X connect 5 1 12 0;
@@ -51,4 +57,11 @@
 #X connect 19 0 20 0;
 #X connect 20 0 8 0;
 #X connect 21 0 10 0;
-#X connect 22 0 21 0;
+#X connect 22 0 25 0;
+#X connect 22 1 23 0;
+#X connect 23 0 25 0;
+#X connect 24 0 21 0;
+#X connect 25 0 24 0;
+#X connect 25 1 27 0;
+#X connect 26 0 5 0;
+#X connect 27 0 24 1;
