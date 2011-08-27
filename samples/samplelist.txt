@@ -1,0 +1,4 @@
+drum1.wav 1;
+pcannon.wav 2;
+vocals.wav 3;
+amen.wav 4;
