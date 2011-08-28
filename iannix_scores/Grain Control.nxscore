@@ -1,0 +1,175 @@
+zoom 116
+center 0 0
+add curve 9
+setpos current 1.39966 2.34259 0
+setactive current 1
+setgroup current 
+setcoloractive current curve_active
+setcolorinactive current curve_inactive
+setsize current 1.2
+setmessage current 20, 
+setlabel current 
+setpointat current 0 -5.21558 -4.30212 0 0 0 0
+setpointat current 1 -5.86384 -1.88586 0 0 0 0
+setpointat current 2 -4.22354 -0.324132 0 0 0 0
+setpointat current 3 1.80728 -3.55563 0 0 0 0
+setpointat current 4 -2.5243 -4.37087 0 0 0 0
+setpointat current 5 -1.86622 -0.0687553 0 0 0 0
+setpointat current 6 0 0 0 0 0 0
+setline current 65535 1
+add cursor 10
+setpos current 0.723869 0.0180967 0
+setactive current 1
+setgroup current 1
+setcoloractive current cursor_active
+setcolorinactive current cursor_inactive
+setsize current 2
+setmessage current 20, osc://127.0.0.1:57120/cursor cursor_group_id cursor_value_x cursor_value_y ,
+setlabel current 
+setcurve current lastCurve
+setline current 65535 1
+setoffset current 0 0 -1
+setboundssource current -4.46418 2.34259 3.20694 -2.02828
+setboundstarget current 10 60 0.5 4
+setspeed current 1
+setspeedf current 1
+setwidth current 1
+setpattern current 0 0 1
+settime current 335.543
+
+add trigger 3
+setpos current 1.37019 1.73362 0
+setactive current 1
+setgroup current 1
+setcoloractive current trigger_active
+setcolorinactive current trigger_inactive
+setsize current 1
+setmessage current 1, osc://127.0.0.1:57120/trigger trigger_group_id ,
+setlabel current 
+settriggeroff current 0
+settextureactive current trigger_active
+settextureinactive current trigger_inactive
+settextureactivemessage current trigger_active_message
+settextureinactivemessage current trigger_inactive_message
+setcoloractivemessage current trigger_active_message
+setcolorinactivemessage current trigger_inactive_message
+
+add trigger 1
+setpos current -2.7453 1.52735 0
+setactive current 1
+setgroup current 1
+setcoloractive current trigger_active
+setcolorinactive current trigger_inactive
+setsize current 1
+setmessage current 1, osc://127.0.0.1:57120/trigger trigger_group_id ,
+setlabel current 
+settriggeroff current 0
+settextureactive current trigger_active
+settextureinactive current trigger_inactive
+settextureactivemessage current trigger_active_message
+settextureinactivemessage current trigger_inactive_message
+setcoloractivemessage current trigger_active_message
+setcolorinactivemessage current trigger_inactive_message
+
+add trigger 2
+setpos current -0.918374 0.240644 0
+setactive current 1
+setgroup current 1
+setcoloractive current trigger_active
+setcolorinactive current trigger_inactive
+setsize current 1
+setmessage current 1, osc://127.0.0.1:57120/trigger trigger_group_id ,
+setlabel current 
+settriggeroff current 0
+settextureactive current trigger_active
+settextureinactive current trigger_inactive
+settextureactivemessage current trigger_active_message
+settextureinactivemessage current trigger_inactive_message
+setcoloractivemessage current trigger_active_message
+setcolorinactivemessage current trigger_inactive_message
+
+add trigger 6
+setpos current -4.22845 0.938019 0
+setactive current 1
+setgroup current 1
+setcoloractive current trigger_active
+setcolorinactive current trigger_inactive
+setsize current 1
+setmessage current 1, osc://127.0.0.1:57120/trigger trigger_group_id ,
+setlabel current 
+settriggeroff current 0
+settextureactive current trigger_active
+settextureinactive current trigger_inactive
+settextureactivemessage current trigger_active_message
+settextureinactivemessage current trigger_inactive_message
+setcoloractivemessage current trigger_active_message
+setcolorinactivemessage current trigger_inactive_message
+
+add trigger 7
+setpos current -0.299577 1.36037 0
+setactive current 1
+setgroup current 1
+setcoloractive current trigger_active
+setcolorinactive current trigger_inactive
+setsize current 1
+setmessage current 1, osc://127.0.0.1:57120/trigger trigger_group_id ,
+setlabel current 
+settriggeroff current 0
+settextureactive current trigger_active
+settextureinactive current trigger_inactive
+settextureactivemessage current trigger_active_message
+settextureinactivemessage current trigger_inactive_message
+setcoloractivemessage current trigger_active_message
+setcolorinactivemessage current trigger_inactive_message
+
+add trigger 4
+setpos current 3.03997 -0.908552 0
+setactive current 1
+setgroup current 1
+setcoloractive current trigger_active
+setcolorinactive current trigger_inactive
+setsize current 1
+setmessage current 1, osc://127.0.0.1:57120/trigger trigger_group_id ,
+setlabel current 
+settriggeroff current 0
+settextureactive current trigger_active
+settextureinactive current trigger_inactive
+settextureactivemessage current trigger_active_message
+settextureinactivemessage current trigger_inactive_message
+setcoloractivemessage current trigger_active_message
+setcolorinactivemessage current trigger_inactive_message
+
+add trigger 8
+setpos current 0.761219 -1.47824 0
+setactive current 1
+setgroup current 1
+setcoloractive current trigger_active
+setcolorinactive current trigger_inactive
+setsize current 1
+setmessage current 1, osc://127.0.0.1:57120/trigger trigger_group_id ,
+setlabel current 
+settriggeroff current 0
+settextureactive current trigger_active
+settextureinactive current trigger_inactive
+settextureactivemessage current trigger_active_message
+settextureinactivemessage current trigger_inactive_message
+setcoloractivemessage current trigger_active_message
+setcolorinactivemessage current trigger_inactive_message
+
+add trigger 5
+setpos current -3.65876 -1.45859 0
+setactive current 1
+setgroup current 1
+setcoloractive current trigger_active
+setcolorinactive current trigger_inactive
+setsize current 1
+setmessage current 1, osc://127.0.0.1:57120/trigger trigger_group_id ,
+setlabel current 
+settriggeroff current 0
+settextureactive current trigger_active
+settextureinactive current trigger_inactive
+settextureactivemessage current trigger_active_message
+settextureinactivemessage current trigger_inactive_message
+setcoloractivemessage current trigger_active_message
+setcolorinactivemessage current trigger_inactive_message
+
