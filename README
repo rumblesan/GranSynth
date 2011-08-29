@@ -1,0 +1,102 @@
+GranSynth - A Granular Synthesizer in Pure Data
+-----------------------------------------------------------
+
+Website: http://www.rumblesan.com/
+
+About
+-----
+
+GranSynth is a Granular Synthesizer written in Pure Data. It has been written mainly to be used with Iannix, a graphical sequencer, but anything that sends OSC messages could be used.
+
+For questions you can check out the blog or email me at guy@rumblesan.com
+
+I also hang around in IRC, #doomcentral on irc.freenode.net
+
+Basics
+-----
+
+The synthesizer has 16 individual grains that can be controlled collectivly or independantly. There are a number of parameters for each grain and they can be triggered via a trigger message, or using standard midi note on/off style messages. Communication is done via OSC and a full message spec can be found below.
+
+Grain Parameters
+-----
+
+All the grain paramters are designed to be ok to modulate without there being any aliasing distortion. This is done using a line~ to smooth the changes over 20ms so very fast modulations may not have such an effect. This may be changed in future however.
+
+midinote 'pitch' 'velocity'
+    the pitch will affect the speed the grain is played back at. midi note 60 is normal speed
+    the velocity will affect the volume. 100 is normal volume. 0 will stop the sound
+
+trigger 'length'
+    the trigger message will make the grain play a note for the specified amount of time. length is measured in miliseconds
+    this is the same as sending a midi note with a pitch of 60 and a velocity of 100
+
+speed-mod 'amount'
+    speed-mod is used to modify the speed of the grain playback. this is independent from the note pitch
+    1 is normal speed, 0.5 is half speed, 2 is double speed
+    default is 1
+
+grainlength 'length'
+    the length of the grain sample. measured in miliseconds
+    default is 50
+
+position
+    the start position of the grain within the sample. measured in percent
+    default is 0
+
+pan
+    the left/right panning of the grain
+    range is 0 for hard left, 1 for hard right.
+    default is 0.5
+
+attack
+    the attack of the note volume envelope. measured in ms
+    default is 50
+
+decay
+    the decay of the note volume envelope. measured in ms
+    default is 50
+
+sustain
+    the sustain level of the note volume envelope. measured in percent
+    default is 100
+
+release
+    the release of the note volume envelope. measured in ms
+    default is 50
+
+
+Sample Loading
+------------
+
+Thanks to the enormously useful rjlib library of abstractions the synth has a nifty sample bank that can be used to easily switch between samples. The samples are kept in the samples directory and a file 'samplelist.txt' keeps the name of each sample and also the index to load it into.
+
+When the synth is started the file is read and each of the samples loaded into memory. a specific sample can be loaded by sending an integer in to the sampleBank abstraction. There's still a lot of work to do here, eventually there will be some indication of what/how many samples and this will also be OSC controllable.
+
+By default the first sample is loaded for all of the grains. This is a global parameter but will probablly be per grain eventually.
+
+OSC Controls
+-----------
+
+The OSC message format is quite simple at the moment as there's not much available.
+
+/transport
+    The transport messages are currently just used to show when Iannix is running and also to turn all the notes off when the sequencer stops or rewinds. The Panic button is also available inside the PureData patch incase you need to stop all the grains playing back.
+
+/grains
+    the grains message can be used to control any parameter of a single grain, or all of them at once. The format is:-
+    
+    /grains "### OR all" "parameter_name" "arguments"
+    
+    where ### is the integer number of a grain
+    all is the string'all'
+    parameter_name is one of the above listed parameters
+    arguments are the arguments listed above for the parameters
+    
+    currently the messages cannot deal with default values or any other fancy stuff. all args must be given. no wild cards or grouping.
+
+Thanks
+------
+
+To the team building Iannix for a cool sequencer. http://iannix.org/en/index.php
+
+To the maintainers of the rjlib for some of the very useful abstractions used here. https://github.com/rjdj/rjlib
