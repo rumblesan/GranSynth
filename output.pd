@@ -1,4 +1,4 @@
-#N canvas -1630 245 540 375 10;
+#N canvas 0 245 540 375 10;
 #X obj 302 204 vsl 40 80 0 127 0 0 \$0-volout \$0-volin empty 0 -9
 0 10 -262144 -1 -1 6220 1;
 #X obj 67 169 *~;
@@ -70,4 +70,4 @@
 #X connect 19 0 20 0;
 #X connect 20 0 22 0;
 #X connect 23 0 25 0;
-#X coords 1 1 0 0 90 90 1 300 200;
+#X coords 1 1 0 0 90 90 2 300 200;
