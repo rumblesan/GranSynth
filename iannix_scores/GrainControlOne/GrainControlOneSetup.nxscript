@@ -1,0 +1,41 @@
+//Template for IanniX Script Engine
+function onConfigure() {
+    //Name of the script
+    iannix.meta("GrainCloudOne");
+    iannix.ask("General", "Number of grains", "grains", 5);
+    iannix.ask("General", "Radius", "radius", 5);
+    iannix.ask("Grains", "Position lower bound", "pos_lower", 20);
+    iannix.ask("Grains", "Position higher bound", "pos_higher", 50);
+    iannix.ask("Grains", "Grain length lower bound", "speed_lower", 10);
+    iannix.ask("Grains", "Grain length higher bound", "speed_higher", 50);
+}
+
+function onCreate() {
+    iannix.execute("clear");
+    iannix.execute("center 0 0");
+    iannix.execute("zoom 300");
+    
+    //Ellipse curves
+    for(var grain_index = 1 ; grain_index <= grains ; grain_index++) {
+        var percent = grain_index / grains;
+        var angle = percent * 2 * Math.PI;
+        addGrainControl(grain_index, radius * Math.cos(angle), radius * Math.sin(angle), radius, percent);
+    }
+}
+
+function addGrainControl(index, center_x, center_y, radius, percent) {
+    iannix.execute("add curve " + (1000 + index));
+    iannix.execute("setGroup current lines");
+    iannix.execute("setPointsEllipse current " + radius + " " + radius);
+    iannix.execute("setPos current " + center_x + " " + center_y + " 0");
+    iannix.execute("setSize current 0.3");
+    
+    iannix.execute("add cursor " + index);
+    iannix.execute("setGroup current values");
+    iannix.execute("setCurve current lastCurve");
+    iannix.execute("setSpeed current " + (1 + percent * 2));
+    iannix.execute("setBoundsTarget current " + pos_lower + " " + speed_lower + " " + pos_higher + " " + speed_higher);
+    iannix.execute("setMessage current 20, osc://127.0.0.1:57120/grains cursor_id grainlength cursor_value_x , osc://127.0.0.1:57120/grains cursor_id position cursor_value_y ");
+    iannix.execute("setSize current 2");
+
+}
