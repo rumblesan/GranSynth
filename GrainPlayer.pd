@@ -1,4 +1,4 @@
-#N canvas -229 70 1428 588 10;
+#N canvas 0 11 1473 757 10;
 #X obj 101 185 /~;
 #X obj 101 213 *~;
 #X obj 214 674 outlet~;
@@ -91,18 +91,23 @@
 #X text 872 317 left inlet are messages for specific grains;
 #X text 872 332 right inlet are messages for all grains;
 #X obj 830 383 paramsend trigger \$0;
-#X obj 830 405 paramsend sample \$0;
-#X obj 830 430 paramsend speed-mod \$0 default 1;
-#X obj 830 455 paramsend grainlength \$0 default 50;
-#X obj 830 480 paramsend position \$0 default 0;
-#X obj 830 505 paramsend pan \$0 default 0.5;
-#X obj 830 530 paramsend attack \$0 default 50;
-#X obj 830 555 paramsend decay \$0 default 50;
-#X obj 830 605 paramsend release \$0 default 100;
-#X obj 830 580 paramsend sustain \$0 default 100;
+#X obj 830 408 paramsend sample \$0;
+#X obj 830 433 paramsend speed-mod \$0 default 1;
+#X obj 830 458 paramsend grainlength \$0 default 50;
+#X obj 830 483 paramsend position \$0 default 0;
+#X obj 830 508 paramsend pan \$0 default 0.5;
+#X obj 830 533 paramsend attack \$0 default 50;
+#X obj 830 558 paramsend decay \$0 default 50;
+#X obj 830 608 paramsend release \$0 default 100;
+#X obj 830 583 paramsend sustain \$0 default 100;
 #X obj 830 358 paramsend midinote \$0;
 #X obj 1206 150 c_adsr;
 #X obj 1000 80 t b f;
+#X obj 830 633 paramsend active \$0 default 0;
+#X obj 1212 302 switch~;
+#X obj 1212 281 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
+0 1;
+#X obj 1212 258 r \$0-active-set;
 #X connect 0 0 1 0;
 #X connect 1 0 8 0;
 #X connect 3 0 76 0;
@@ -210,6 +215,8 @@
 #X connect 97 1 98 1;
 #X connect 98 0 100 0;
 #X connect 98 1 100 1;
+#X connect 99 0 104 0;
+#X connect 99 1 104 1;
 #X connect 100 0 99 0;
 #X connect 100 1 99 1;
 #X connect 101 0 91 0;
@@ -217,3 +224,5 @@
 #X connect 102 0 53 0;
 #X connect 103 0 70 0;
 #X connect 103 1 69 1;
+#X connect 106 0 105 0;
+#X connect 107 0 106 0;

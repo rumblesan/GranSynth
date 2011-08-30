@@ -15,7 +15,7 @@ I also hang around in IRC, #doomcentral on irc.freenode.net
 Basics
 -----
 
-The synthesizer has 16 individual grains that can be controlled collectivly or independantly. There are a number of parameters for each grain and they can be triggered via a trigger message, or using standard midi note on/off style messages. Communication is done via OSC and a full message spec can be found below.
+The synthesizer has 32 individual grains that can be controlled collectivly or independantly. There are a number of parameters for each grain and they can be triggered via a trigger message, or using standard midi note on/off style messages. Communication is done via OSC and a full message spec can be found below.
 
 Grain Parameters
 -----
@@ -29,6 +29,9 @@ midinote 'pitch' 'velocity'
 trigger 'length'
     the trigger message will make the grain play a note for the specified amount of time. length is measured in miliseconds
     this is the same as sending a midi note with a pitch of 60 and a velocity of 100
+
+active '1/0'
+    voices can be turned on or off using the active message
 
 speed-mod 'amount'
     speed-mod is used to modify the speed of the grain playback. this is independent from the note pitch
