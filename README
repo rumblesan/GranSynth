@@ -22,13 +22,10 @@ Grain Parameters
 
 All the grain paramters are designed to be ok to modulate without there being any aliasing distortion. This is done using a line~ to smooth the changes over 20ms so very fast modulations may not have such an effect. This may be changed in future however.
 
-midinote 'pitch' 'velocity'
+midinote 'pitch' 'velocity' [length]
     the pitch will affect the speed the grain is played back at. midi note 60 is normal speed
     the velocity will affect the volume. 100 is normal volume. 0 will stop the sound
-
-trigger 'length'
-    the trigger message will make the grain play a note for the specified amount of time. length is measured in miliseconds
-    this is the same as sending a midi note with a pitch of 60 and a velocity of 100
+    length is optional. if specified then after the given number of miliseconds the note will be stopped
 
 active '1/0'
     voices can be turned on or off using the active message
