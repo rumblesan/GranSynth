@@ -1,12 +1,14 @@
-#N canvas 0 70 369 209 10;
+#N canvas -1021 385 369 209 10;
 #X obj 50 45 dumpOSC \$1;
 #X obj 50 95 route all;
 #X obj 126 120 s singlegrain;
 #X obj 50 120 s allgrains;
 #X obj 50 70 routeOSC /grains /sample /fx /transport;
 #X obj 223 119 s transport;
+#X obj 112 95 s sampleosc;
 #X connect 0 0 4 0;
 #X connect 1 0 3 0;
 #X connect 1 1 2 0;
 #X connect 4 0 1 0;
+#X connect 4 1 6 0;
 #X connect 4 3 5 0;
