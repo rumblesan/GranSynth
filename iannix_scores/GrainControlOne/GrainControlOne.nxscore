@@ -1,7 +1,7 @@
-zoom 148
+zoom 300
 center 0 0
 add curve 1003
-setpos current 0.618034 1.90211 0
+setpos current 2.35114 3.23607 0
 setactive current 1
 setgroup current lines
 setcoloractive current curve_active
@@ -9,8 +9,8 @@ setcolorinactive current curve_inactive
 setsize current 0.3
 setmessage current 20, 
 setlabel current 
-setpointsellipse current 4 4
-setresize current 4 4
+setpointsellipse current 8 8
+setresize current 8 8
 add cursor 3
 setpos current 0 0 0
 setactive current 1
@@ -18,83 +18,21 @@ setgroup current values
 setcoloractive current cursor_active
 setcolorinactive current cursor_inactive
 setsize current 2
-setmessage current 20, osc://127.0.0.1:57120/grains cursor_id grainlength cursor_value_x ,osc://127.0.0.1:57120/grains cursor_id position cursor_value_y ,
+setmessage current 20, osc://127.0.0.1:57120/voices cursor_id grainlength cursor_value_x ,osc://127.0.0.1:57120/voices cursor_id position cursor_value_y ,
 setlabel current 
 setcurve current lastCurve
 setline current 65535 1
 setoffset current 0 0 -1
-setboundssource current -1.38197 3.90211 2.61803 -0.097887
-setboundstarget current 20 20 50 30
-setspeed current 1.4
+setboundssource current -1.64886 7.23607 6.35114 -0.763932
+setboundstarget current 40 10 50 50
+setspeed current 1.3
 setspeedf current 1
 setwidth current 1
 setpattern current 0 0 1
-settime current 76.0158
-
-add curve 1001
-setpos current 1.82709 0.813473 0
-setactive current 1
-setgroup current lines
-setcoloractive current curve_active
-setcolorinactive current curve_inactive
-setsize current 0.3
-setmessage current 20, 
-setlabel current 
-setpointsellipse current 4 4
-setresize current 4 4
-add cursor 1
-setpos current 0 0 0
-setactive current 1
-setgroup current values
-setcoloractive current cursor_active
-setcolorinactive current cursor_inactive
-setsize current 2
-setmessage current 20, osc://127.0.0.1:57120/grains cursor_id grainlength cursor_value_x ,osc://127.0.0.1:57120/grains cursor_id position cursor_value_y ,
-setlabel current 
-setcurve current lastCurve
-setline current 65535 1
-setoffset current 0 0 -1
-setboundssource current -0.172909 2.81347 3.82709 -1.18653
-setboundstarget current 20 20 50 30
-setspeed current 1.13333
-setspeedf current 1
-setwidth current 1
-setpattern current 0 0 1
-settime current 61.5366
-
-add curve 1002
-setpos current 1.33826 1.48629 0
-setactive current 1
-setgroup current lines
-setcoloractive current curve_active
-setcolorinactive current curve_inactive
-setsize current 0.3
-setmessage current 20, 
-setlabel current 
-setpointsellipse current 4 4
-setresize current 4 4
-add cursor 2
-setpos current 0 0 0
-setactive current 1
-setgroup current values
-setcoloractive current cursor_active
-setcolorinactive current cursor_inactive
-setsize current 2
-setmessage current 20, osc://127.0.0.1:57120/grains cursor_id grainlength cursor_value_x ,osc://127.0.0.1:57120/grains cursor_id position cursor_value_y ,
-setlabel current 
-setcurve current lastCurve
-setline current 65535 1
-setoffset current 0 0 -1
-setboundssource current -0.661739 3.48629 3.33826 -0.51371
-setboundstarget current 20 20 50 30
-setspeed current 1.26667
-setspeedf current 1
-setwidth current 1
-setpattern current 0 0 1
-settime current 68.7762
+settime current 58.5425
 
 add curve 1004
-setpos current -0.209057 1.98904 0
+setpos current 1.23607 3.80423 0
 setactive current 1
 setgroup current lines
 setcoloractive current curve_active
@@ -102,8 +40,8 @@ setcolorinactive current curve_inactive
 setsize current 0.3
 setmessage current 20, 
 setlabel current 
-setpointsellipse current 4 4
-setresize current 4 4
+setpointsellipse current 8 8
+setresize current 8 8
 add cursor 4
 setpos current 0 0 0
 setactive current 1
@@ -111,21 +49,21 @@ setgroup current values
 setcoloractive current cursor_active
 setcolorinactive current cursor_inactive
 setsize current 2
-setmessage current 20, osc://127.0.0.1:57120/grains cursor_id grainlength cursor_value_x ,osc://127.0.0.1:57120/grains cursor_id position cursor_value_y ,
+setmessage current 20, osc://127.0.0.1:57120/voices cursor_id grainlength cursor_value_x ,osc://127.0.0.1:57120/voices cursor_id position cursor_value_y ,
 setlabel current 
 setcurve current lastCurve
 setline current 65535 1
 setoffset current 0 0 -1
-setboundssource current -2.20906 3.98904 1.79094 -0.0109562
-setboundstarget current 20 20 50 30
-setspeed current 1.53333
+setboundssource current -2.76393 7.80423 5.23607 -0.195774
+setboundstarget current 40 10 50 50
+setspeed current 1.4
 setspeedf current 1
 setwidth current 1
 setpattern current 0 0 1
-settime current 83.2554
+settime current 63.0458
 
 add curve 1005
-setpos current -1 1.73205 0
+setpos current 2.44921e-16 4 0
 setactive current 1
 setgroup current lines
 setcoloractive current curve_active
@@ -133,8 +71,8 @@ setcolorinactive current curve_inactive
 setsize current 0.3
 setmessage current 20, 
 setlabel current 
-setpointsellipse current 4 4
-setresize current 4 4
+setpointsellipse current 8 8
+setresize current 8 8
 add cursor 5
 setpos current 0 0 0
 setactive current 1
@@ -142,21 +80,21 @@ setgroup current values
 setcoloractive current cursor_active
 setcolorinactive current cursor_inactive
 setsize current 2
-setmessage current 20, osc://127.0.0.1:57120/grains cursor_id grainlength cursor_value_x ,osc://127.0.0.1:57120/grains cursor_id position cursor_value_y ,
+setmessage current 20, osc://127.0.0.1:57120/voices cursor_id grainlength cursor_value_x ,osc://127.0.0.1:57120/voices cursor_id position cursor_value_y ,
 setlabel current 
 setcurve current lastCurve
 setline current 65535 1
 setoffset current 0 0 -1
-setboundssource current -3 3.73205 1 -0.267949
-setboundstarget current 20 20 50 30
-setspeed current 1.66667
+setboundssource current -4 8 4 0
+setboundstarget current 40 10 50 50
+setspeed current 1.5
 setspeedf current 1
 setwidth current 1
 setpattern current 0 0 1
-settime current 90.495
+settime current 67.549
 
-add curve 1006
-setpos current -1.61803 1.17557 0
+add curve 1001
+setpos current 3.80423 1.23607 0
 setactive current 1
 setgroup current lines
 setcoloractive current curve_active
@@ -164,8 +102,70 @@ setcolorinactive current curve_inactive
 setsize current 0.3
 setmessage current 20, 
 setlabel current 
-setpointsellipse current 4 4
-setresize current 4 4
+setpointsellipse current 8 8
+setresize current 8 8
+add cursor 1
+setpos current 0 0 0
+setactive current 1
+setgroup current values
+setcoloractive current cursor_active
+setcolorinactive current cursor_inactive
+setsize current 2
+setmessage current 20, osc://127.0.0.1:57120/voices cursor_id grainlength cursor_value_x ,osc://127.0.0.1:57120/voices cursor_id position cursor_value_y ,
+setlabel current 
+setcurve current lastCurve
+setline current 65535 1
+setoffset current 0 0 -1
+setboundssource current -0.195774 5.23607 7.80423 -2.76393
+setboundstarget current 40 10 50 50
+setspeed current 1.1
+setspeedf current 1
+setwidth current 1
+setpattern current 0 0 1
+settime current 49.536
+
+add curve 1002
+setpos current 3.23607 2.35114 0
+setactive current 1
+setgroup current lines
+setcoloractive current curve_active
+setcolorinactive current curve_inactive
+setsize current 0.3
+setmessage current 20, 
+setlabel current 
+setpointsellipse current 8 8
+setresize current 8 8
+add cursor 2
+setpos current 0 0 0
+setactive current 1
+setgroup current values
+setcoloractive current cursor_active
+setcolorinactive current cursor_inactive
+setsize current 2
+setmessage current 20, osc://127.0.0.1:57120/voices cursor_id grainlength cursor_value_x ,osc://127.0.0.1:57120/voices cursor_id position cursor_value_y ,
+setlabel current 
+setcurve current lastCurve
+setline current 65535 1
+setoffset current 0 0 -1
+setboundssource current -0.763932 6.35114 7.23607 -1.64886
+setboundstarget current 40 10 50 50
+setspeed current 1.2
+setspeedf current 1
+setwidth current 1
+setpattern current 0 0 1
+settime current 54.0392
+
+add curve 1006
+setpos current -1.23607 3.80423 0
+setactive current 1
+setgroup current lines
+setcoloractive current curve_active
+setcolorinactive current curve_inactive
+setsize current 0.3
+setmessage current 20, 
+setlabel current 
+setpointsellipse current 8 8
+setresize current 8 8
 add cursor 6
 setpos current 0 0 0
 setactive current 1
@@ -173,21 +173,21 @@ setgroup current values
 setcoloractive current cursor_active
 setcolorinactive current cursor_inactive
 setsize current 2
-setmessage current 20, osc://127.0.0.1:57120/grains cursor_id grainlength cursor_value_x ,osc://127.0.0.1:57120/grains cursor_id position cursor_value_y ,
+setmessage current 20, osc://127.0.0.1:57120/voices cursor_id grainlength cursor_value_x ,osc://127.0.0.1:57120/voices cursor_id position cursor_value_y ,
 setlabel current 
 setcurve current lastCurve
 setline current 65535 1
 setoffset current 0 0 -1
-setboundssource current -3.61803 3.17557 0.381966 -0.824429
-setboundstarget current 20 20 50 30
-setspeed current 1.8
+setboundssource current -5.23607 7.80423 2.76393 -0.195774
+setboundstarget current 40 10 50 50
+setspeed current 1.6
 setspeedf current 1
 setwidth current 1
 setpattern current 0 0 1
-settime current 97.7347
+settime current 72.0523
 
 add curve 1007
-setpos current -1.9563 0.415823 0
+setpos current -2.35114 3.23607 0
 setactive current 1
 setgroup current lines
 setcoloractive current curve_active
@@ -195,8 +195,8 @@ setcolorinactive current curve_inactive
 setsize current 0.3
 setmessage current 20, 
 setlabel current 
-setpointsellipse current 4 4
-setresize current 4 4
+setpointsellipse current 8 8
+setresize current 8 8
 add cursor 7
 setpos current 0 0 0
 setactive current 1
@@ -204,145 +204,21 @@ setgroup current values
 setcoloractive current cursor_active
 setcolorinactive current cursor_inactive
 setsize current 2
-setmessage current 20, osc://127.0.0.1:57120/grains cursor_id grainlength cursor_value_x ,osc://127.0.0.1:57120/grains cursor_id position cursor_value_y ,
+setmessage current 20, osc://127.0.0.1:57120/voices cursor_id grainlength cursor_value_x ,osc://127.0.0.1:57120/voices cursor_id position cursor_value_y ,
 setlabel current 
 setcurve current lastCurve
 setline current 65535 1
 setoffset current 0 0 -1
-setboundssource current -3.9563 2.41582 0.0437048 -1.58418
-setboundstarget current 20 20 50 30
-setspeed current 1.93333
+setboundssource current -6.35114 7.23607 1.64886 -0.763932
+setboundstarget current 40 10 50 50
+setspeed current 1.7
 setspeedf current 1
 setwidth current 1
 setpattern current 0 0 1
-settime current 104.974
-
-add curve 1012
-setpos current 0.618034 -1.90211 0
-setactive current 1
-setgroup current lines
-setcoloractive current curve_active
-setcolorinactive current curve_inactive
-setsize current 0.3
-setmessage current 20, 
-setlabel current 
-setpointsellipse current 4 4
-setresize current 4 4
-add cursor 12
-setpos current 0 0 0
-setactive current 1
-setgroup current values
-setcoloractive current cursor_active
-setcolorinactive current cursor_inactive
-setsize current 2
-setmessage current 20, osc://127.0.0.1:57120/grains cursor_id grainlength cursor_value_x ,osc://127.0.0.1:57120/grains cursor_id position cursor_value_y ,
-setlabel current 
-setcurve current lastCurve
-setline current 65535 1
-setoffset current 0 0 -1
-setboundssource current -1.38197 0.097887 2.61803 -3.90211
-setboundstarget current 20 20 50 30
-setspeed current 2.6
-setspeedf current 1
-setwidth current 1
-setpattern current 0 0 1
-settime current 141.172
-
-add curve 1013
-setpos current 1.33826 -1.48629 0
-setactive current 1
-setgroup current lines
-setcoloractive current curve_active
-setcolorinactive current curve_inactive
-setsize current 0.3
-setmessage current 20, 
-setlabel current 
-setpointsellipse current 4 4
-setresize current 4 4
-add cursor 13
-setpos current 0 0 0
-setactive current 1
-setgroup current values
-setcoloractive current cursor_active
-setcolorinactive current cursor_inactive
-setsize current 2
-setmessage current 20, osc://127.0.0.1:57120/grains cursor_id grainlength cursor_value_x ,osc://127.0.0.1:57120/grains cursor_id position cursor_value_y ,
-setlabel current 
-setcurve current lastCurve
-setline current 65535 1
-setoffset current 0 0 -1
-setboundssource current -0.661739 0.51371 3.33826 -3.48629
-setboundstarget current 20 20 50 30
-setspeed current 2.73333
-setspeedf current 1
-setwidth current 1
-setpattern current 0 0 1
-settime current 148.412
-
-add curve 1014
-setpos current 1.82709 -0.813473 0
-setactive current 1
-setgroup current lines
-setcoloractive current curve_active
-setcolorinactive current curve_inactive
-setsize current 0.3
-setmessage current 20, 
-setlabel current 
-setpointsellipse current 4 4
-setresize current 4 4
-add cursor 14
-setpos current 0 0 0
-setactive current 1
-setgroup current values
-setcoloractive current cursor_active
-setcolorinactive current cursor_inactive
-setsize current 2
-setmessage current 20, osc://127.0.0.1:57120/grains cursor_id grainlength cursor_value_x ,osc://127.0.0.1:57120/grains cursor_id position cursor_value_y ,
-setlabel current 
-setcurve current lastCurve
-setline current 65535 1
-setoffset current 0 0 -1
-setboundssource current -0.172909 1.18653 3.82709 -2.81347
-setboundstarget current 20 20 50 30
-setspeed current 2.86667
-setspeedf current 1
-setwidth current 1
-setpattern current 0 0 1
-settime current 155.651
-
-add curve 1015
-setpos current 2 -4.89843e-16 0
-setactive current 1
-setgroup current lines
-setcoloractive current curve_active
-setcolorinactive current curve_inactive
-setsize current 0.3
-setmessage current 20, 
-setlabel current 
-setpointsellipse current 4 4
-setresize current 4 4
-add cursor 15
-setpos current 0 0 0
-setactive current 1
-setgroup current values
-setcoloractive current cursor_active
-setcolorinactive current cursor_inactive
-setsize current 2
-setmessage current 20, osc://127.0.0.1:57120/grains cursor_id grainlength cursor_value_x ,osc://127.0.0.1:57120/grains cursor_id position cursor_value_y ,
-setlabel current 
-setcurve current lastCurve
-setline current 65535 1
-setoffset current 0 0 -1
-setboundssource current 0 2 4 -2
-setboundstarget current 20 20 50 30
-setspeed current 3
-setspeedf current 1
-setwidth current 1
-setpattern current 0 0 1
-settime current 162.891
+settime current 76.5556
 
 add curve 1008
-setpos current -1.9563 -0.415823 0
+setpos current -3.23607 2.35114 0
 setactive current 1
 setgroup current lines
 setcoloractive current curve_active
@@ -350,8 +226,8 @@ setcolorinactive current curve_inactive
 setsize current 0.3
 setmessage current 20, 
 setlabel current 
-setpointsellipse current 4 4
-setresize current 4 4
+setpointsellipse current 8 8
+setresize current 8 8
 add cursor 8
 setpos current 0 0 0
 setactive current 1
@@ -359,21 +235,21 @@ setgroup current values
 setcoloractive current cursor_active
 setcolorinactive current cursor_inactive
 setsize current 2
-setmessage current 20, osc://127.0.0.1:57120/grains cursor_id grainlength cursor_value_x ,osc://127.0.0.1:57120/grains cursor_id position cursor_value_y ,
+setmessage current 20, osc://127.0.0.1:57120/voices cursor_id grainlength cursor_value_x ,osc://127.0.0.1:57120/voices cursor_id position cursor_value_y ,
 setlabel current 
 setcurve current lastCurve
 setline current 65535 1
 setoffset current 0 0 -1
-setboundssource current -3.9563 1.58418 0.0437048 -2.41582
-setboundstarget current 20 20 50 30
-setspeed current 2.06667
+setboundssource current -7.23607 6.35114 0.763932 -1.64886
+setboundstarget current 40 10 50 50
+setspeed current 1.8
 setspeedf current 1
 setwidth current 1
 setpattern current 0 0 1
-settime current 112.214
+settime current 81.0588
 
 add curve 1009
-setpos current -1.61803 -1.17557 0
+setpos current -3.80423 1.23607 0
 setactive current 1
 setgroup current lines
 setcoloractive current curve_active
@@ -381,8 +257,8 @@ setcolorinactive current curve_inactive
 setsize current 0.3
 setmessage current 20, 
 setlabel current 
-setpointsellipse current 4 4
-setresize current 4 4
+setpointsellipse current 8 8
+setresize current 8 8
 add cursor 9
 setpos current 0 0 0
 setactive current 1
@@ -390,21 +266,21 @@ setgroup current values
 setcoloractive current cursor_active
 setcolorinactive current cursor_inactive
 setsize current 2
-setmessage current 20, osc://127.0.0.1:57120/grains cursor_id grainlength cursor_value_x ,osc://127.0.0.1:57120/grains cursor_id position cursor_value_y ,
+setmessage current 20, osc://127.0.0.1:57120/voices cursor_id grainlength cursor_value_x ,osc://127.0.0.1:57120/voices cursor_id position cursor_value_y ,
 setlabel current 
 setcurve current lastCurve
 setline current 65535 1
 setoffset current 0 0 -1
-setboundssource current -3.61803 0.824429 0.381966 -3.17557
-setboundstarget current 20 20 50 30
-setspeed current 2.2
+setboundssource current -7.80423 5.23607 0.195774 -2.76393
+setboundstarget current 40 10 50 50
+setspeed current 1.9
 setspeedf current 1
 setwidth current 1
 setpattern current 0 0 1
-settime current 119.453
+settime current 85.5621
 
 add curve 1010
-setpos current -1 -1.73205 0
+setpos current -4 4.89843e-16 0
 setactive current 1
 setgroup current lines
 setcoloractive current curve_active
@@ -412,8 +288,8 @@ setcolorinactive current curve_inactive
 setsize current 0.3
 setmessage current 20, 
 setlabel current 
-setpointsellipse current 4 4
-setresize current 4 4
+setpointsellipse current 8 8
+setresize current 8 8
 add cursor 10
 setpos current 0 0 0
 setactive current 1
@@ -421,21 +297,21 @@ setgroup current values
 setcoloractive current cursor_active
 setcolorinactive current cursor_inactive
 setsize current 2
-setmessage current 20, osc://127.0.0.1:57120/grains cursor_id grainlength cursor_value_x ,osc://127.0.0.1:57120/grains cursor_id position cursor_value_y ,
+setmessage current 20, osc://127.0.0.1:57120/voices cursor_id grainlength cursor_value_x ,osc://127.0.0.1:57120/voices cursor_id position cursor_value_y ,
 setlabel current 
 setcurve current lastCurve
 setline current 65535 1
 setoffset current 0 0 -1
-setboundssource current -3 0.267949 1 -3.73205
-setboundstarget current 20 20 50 30
-setspeed current 2.33333
+setboundssource current -8 4 0 -4
+setboundstarget current 40 10 50 50
+setspeed current 2
 setspeedf current 1
 setwidth current 1
 setpattern current 0 0 1
-settime current 126.693
+settime current 90.0654
 
-add curve 1011
-setpos current -0.209057 -1.98904 0
+add curve 1020
+setpos current 4 -9.79685e-16 0
 setactive current 1
 setgroup current lines
 setcoloractive current curve_active
@@ -443,8 +319,163 @@ setcolorinactive current curve_inactive
 setsize current 0.3
 setmessage current 20, 
 setlabel current 
-setpointsellipse current 4 4
-setresize current 4 4
+setpointsellipse current 8 8
+setresize current 8 8
+add cursor 20
+setpos current 0 0 0
+setactive current 1
+setgroup current values
+setcoloractive current cursor_active
+setcolorinactive current cursor_inactive
+setsize current 2
+setmessage current 20, osc://127.0.0.1:57120/voices cursor_id grainlength cursor_value_x ,osc://127.0.0.1:57120/voices cursor_id position cursor_value_y ,
+setlabel current 
+setcurve current lastCurve
+setline current 65535 1
+setoffset current 0 0 -1
+setboundssource current 0 4 8 -4
+setboundstarget current 40 10 50 50
+setspeed current 3
+setspeedf current 1
+setwidth current 1
+setpattern current 0 0 1
+settime current 135.098
+
+add curve 1016
+setpos current 1.23607 -3.80423 0
+setactive current 1
+setgroup current lines
+setcoloractive current curve_active
+setcolorinactive current curve_inactive
+setsize current 0.3
+setmessage current 20, 
+setlabel current 
+setpointsellipse current 8 8
+setresize current 8 8
+add cursor 16
+setpos current 0 0 0
+setactive current 1
+setgroup current values
+setcoloractive current cursor_active
+setcolorinactive current cursor_inactive
+setsize current 2
+setmessage current 20, osc://127.0.0.1:57120/voices cursor_id grainlength cursor_value_x ,osc://127.0.0.1:57120/voices cursor_id position cursor_value_y ,
+setlabel current 
+setcurve current lastCurve
+setline current 65535 1
+setoffset current 0 0 -1
+setboundssource current -2.76393 0.195774 5.23607 -7.80423
+setboundstarget current 40 10 50 50
+setspeed current 2.6
+setspeedf current 1
+setwidth current 1
+setpattern current 0 0 1
+settime current 117.085
+
+add curve 1017
+setpos current 2.35114 -3.23607 0
+setactive current 1
+setgroup current lines
+setcoloractive current curve_active
+setcolorinactive current curve_inactive
+setsize current 0.3
+setmessage current 20, 
+setlabel current 
+setpointsellipse current 8 8
+setresize current 8 8
+add cursor 17
+setpos current 0 0 0
+setactive current 1
+setgroup current values
+setcoloractive current cursor_active
+setcolorinactive current cursor_inactive
+setsize current 2
+setmessage current 20, osc://127.0.0.1:57120/voices cursor_id grainlength cursor_value_x ,osc://127.0.0.1:57120/voices cursor_id position cursor_value_y ,
+setlabel current 
+setcurve current lastCurve
+setline current 65535 1
+setoffset current 0 0 -1
+setboundssource current -1.64886 0.763932 6.35114 -7.23607
+setboundstarget current 40 10 50 50
+setspeed current 2.7
+setspeedf current 1
+setwidth current 1
+setpattern current 0 0 1
+settime current 121.588
+
+add curve 1018
+setpos current 3.23607 -2.35114 0
+setactive current 1
+setgroup current lines
+setcoloractive current curve_active
+setcolorinactive current curve_inactive
+setsize current 0.3
+setmessage current 20, 
+setlabel current 
+setpointsellipse current 8 8
+setresize current 8 8
+add cursor 18
+setpos current 0 0 0
+setactive current 1
+setgroup current values
+setcoloractive current cursor_active
+setcolorinactive current cursor_inactive
+setsize current 2
+setmessage current 20, osc://127.0.0.1:57120/voices cursor_id grainlength cursor_value_x ,osc://127.0.0.1:57120/voices cursor_id position cursor_value_y ,
+setlabel current 
+setcurve current lastCurve
+setline current 65535 1
+setoffset current 0 0 -1
+setboundssource current -0.763932 1.64886 7.23607 -6.35114
+setboundstarget current 40 10 50 50
+setspeed current 2.8
+setspeedf current 1
+setwidth current 1
+setpattern current 0 0 1
+settime current 126.092
+
+add curve 1019
+setpos current 3.80423 -1.23607 0
+setactive current 1
+setgroup current lines
+setcoloractive current curve_active
+setcolorinactive current curve_inactive
+setsize current 0.3
+setmessage current 20, 
+setlabel current 
+setpointsellipse current 8 8
+setresize current 8 8
+add cursor 19
+setpos current 0 0 0
+setactive current 1
+setgroup current values
+setcoloractive current cursor_active
+setcolorinactive current cursor_inactive
+setsize current 2
+setmessage current 20, osc://127.0.0.1:57120/voices cursor_id grainlength cursor_value_x ,osc://127.0.0.1:57120/voices cursor_id position cursor_value_y ,
+setlabel current 
+setcurve current lastCurve
+setline current 65535 1
+setoffset current 0 0 -1
+setboundssource current -0.195774 2.76393 7.80423 -5.23607
+setboundstarget current 40 10 50 50
+setspeed current 2.9
+setspeedf current 1
+setwidth current 1
+setpattern current 0 0 1
+settime current 130.595
+
+add curve 1011
+setpos current -3.80423 -1.23607 0
+setactive current 1
+setgroup current lines
+setcoloractive current curve_active
+setcolorinactive current curve_inactive
+setsize current 0.3
+setmessage current 20, 
+setlabel current 
+setpointsellipse current 8 8
+setresize current 8 8
 add cursor 11
 setpos current 0 0 0
 setactive current 1
@@ -452,16 +483,140 @@ setgroup current values
 setcoloractive current cursor_active
 setcolorinactive current cursor_inactive
 setsize current 2
-setmessage current 20, osc://127.0.0.1:57120/grains cursor_id grainlength cursor_value_x ,osc://127.0.0.1:57120/grains cursor_id position cursor_value_y ,
+setmessage current 20, osc://127.0.0.1:57120/voices cursor_id grainlength cursor_value_x ,osc://127.0.0.1:57120/voices cursor_id position cursor_value_y ,
 setlabel current 
 setcurve current lastCurve
 setline current 65535 1
 setoffset current 0 0 -1
-setboundssource current -2.20906 0.0109562 1.79094 -3.98904
-setboundstarget current 20 20 50 30
-setspeed current 2.46667
+setboundssource current -7.80423 2.76393 0.195774 -5.23607
+setboundstarget current 40 10 50 50
+setspeed current 2.1
 setspeedf current 1
 setwidth current 1
 setpattern current 0 0 1
-settime current 133.933
+settime current 94.5686
+
+add curve 1012
+setpos current -3.23607 -2.35114 0
+setactive current 1
+setgroup current lines
+setcoloractive current curve_active
+setcolorinactive current curve_inactive
+setsize current 0.3
+setmessage current 20, 
+setlabel current 
+setpointsellipse current 8 8
+setresize current 8 8
+add cursor 12
+setpos current 0 0 0
+setactive current 1
+setgroup current values
+setcoloractive current cursor_active
+setcolorinactive current cursor_inactive
+setsize current 2
+setmessage current 20, osc://127.0.0.1:57120/voices cursor_id grainlength cursor_value_x ,osc://127.0.0.1:57120/voices cursor_id position cursor_value_y ,
+setlabel current 
+setcurve current lastCurve
+setline current 65535 1
+setoffset current 0 0 -1
+setboundssource current -7.23607 1.64886 0.763932 -6.35114
+setboundstarget current 40 10 50 50
+setspeed current 2.2
+setspeedf current 1
+setwidth current 1
+setpattern current 0 0 1
+settime current 99.0719
+
+add curve 1013
+setpos current -2.35114 -3.23607 0
+setactive current 1
+setgroup current lines
+setcoloractive current curve_active
+setcolorinactive current curve_inactive
+setsize current 0.3
+setmessage current 20, 
+setlabel current 
+setpointsellipse current 8 8
+setresize current 8 8
+add cursor 13
+setpos current 0 0 0
+setactive current 1
+setgroup current values
+setcoloractive current cursor_active
+setcolorinactive current cursor_inactive
+setsize current 2
+setmessage current 20, osc://127.0.0.1:57120/voices cursor_id grainlength cursor_value_x ,osc://127.0.0.1:57120/voices cursor_id position cursor_value_y ,
+setlabel current 
+setcurve current lastCurve
+setline current 65535 1
+setoffset current 0 0 -1
+setboundssource current -6.35114 0.763932 1.64886 -7.23607
+setboundstarget current 40 10 50 50
+setspeed current 2.3
+setspeedf current 1
+setwidth current 1
+setpattern current 0 0 1
+settime current 103.575
+
+add curve 1014
+setpos current -1.23607 -3.80423 0
+setactive current 1
+setgroup current lines
+setcoloractive current curve_active
+setcolorinactive current curve_inactive
+setsize current 0.3
+setmessage current 20, 
+setlabel current 
+setpointsellipse current 8 8
+setresize current 8 8
+add cursor 14
+setpos current 0 0 0
+setactive current 1
+setgroup current values
+setcoloractive current cursor_active
+setcolorinactive current cursor_inactive
+setsize current 2
+setmessage current 20, osc://127.0.0.1:57120/voices cursor_id grainlength cursor_value_x ,osc://127.0.0.1:57120/voices cursor_id position cursor_value_y ,
+setlabel current 
+setcurve current lastCurve
+setline current 65535 1
+setoffset current 0 0 -1
+setboundssource current -5.23607 0.195774 2.76393 -7.80423
+setboundstarget current 40 10 50 50
+setspeed current 2.4
+setspeedf current 1
+setwidth current 1
+setpattern current 0 0 1
+settime current 108.078
+
+add curve 1015
+setpos current -7.34764e-16 -4 0
+setactive current 1
+setgroup current lines
+setcoloractive current curve_active
+setcolorinactive current curve_inactive
+setsize current 0.3
+setmessage current 20, 
+setlabel current 
+setpointsellipse current 8 8
+setresize current 8 8
+add cursor 15
+setpos current 0 0 0
+setactive current 1
+setgroup current values
+setcoloractive current cursor_active
+setcolorinactive current cursor_inactive
+setsize current 2
+setmessage current 20, osc://127.0.0.1:57120/voices cursor_id grainlength cursor_value_x ,osc://127.0.0.1:57120/voices cursor_id position cursor_value_y ,
+setlabel current 
+setcurve current lastCurve
+setline current 65535 1
+setoffset current 0 0 -1
+setboundssource current -4 0 4 -8
+setboundstarget current 40 10 50 50
+setspeed current 2.5
+setspeedf current 1
+setwidth current 1
+setpattern current 0 0 1
+settime current 112.582
 

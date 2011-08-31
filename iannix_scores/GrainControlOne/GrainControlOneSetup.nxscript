@@ -35,7 +35,7 @@ function addGrainControl(index, center_x, center_y, radius, percent) {
     iannix.execute("setCurve current lastCurve");
     iannix.execute("setSpeed current " + (1 + percent * 2));
     iannix.execute("setBoundsTarget current " + pos_lower + " " + speed_lower + " " + pos_higher + " " + speed_higher);
-    iannix.execute("setMessage current 20, osc://127.0.0.1:57120/grains cursor_id grainlength cursor_value_x , osc://127.0.0.1:57120/grains cursor_id position cursor_value_y ");
+    iannix.execute("setMessage current 20, osc://127.0.0.1:57120/voices cursor_id grainlength cursor_value_x , osc://127.0.0.1:57120/voices cursor_id position cursor_value_y ");
     iannix.execute("setSize current 2");
 
 }
