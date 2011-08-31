@@ -1,8 +1,8 @@
-#N struct 1048-symarray float x array symbols 1048-sym;
-#N struct 1048-sym symbol name float on;
-#N struct 1049-symarray float x array symbols 1049-sym;
-#N struct 1049-sym symbol name float on;
-#N canvas -1460 121 976 645 10;
+#N struct 1013-symarray float x array symbols 1013-sym;
+#N struct 1013-sym symbol name float on;
+#N struct 1014-symarray float x array symbols 1014-sym;
+#N struct 1014-sym symbol name float on;
+#N canvas -1036 275 976 645 10;
 #X declare -lib mrpeach;
 #X obj 228 41 import mrpeach;
 #X obj 429 147 Output;
@@ -21,14 +21,14 @@
 #X text 354 434 voices;
 #X obj 223 450 s voicenumdisplay;
 #X obj 288 399 s cfg;
-#X obj 288 336 loadbang;
+#X obj 288 312 loadbang;
 #X obj 118 403 route voicenumber;
 #X msg 288 378 voicenumber \$1;
 #X obj 227 69 OSCControl 57120;
 #X obj 453 329 r transport;
 #X obj 453 388 route play stop fastrewind;
 #X obj 453 368 spigot;
-#X obj 486 349 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 486 349 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X msg 453 416 all midinote 60 100;
 #X msg 575 416 all midinote 60 0;
@@ -42,8 +42,9 @@
 #X obj 97 129 r voices;
 #X obj 210 129 r settings;
 #X obj 123 186 GrainBank 32;
-#X msg 288 357 32;
+#X msg 288 333 32;
 #X msg 638 306 32 midinote 60 0;
+#X floatatom 288 355 5 1 32 0 - - -;
 #X connect 3 0 1 0;
 #X connect 4 0 1 1;
 #X connect 11 0 31 0;
@@ -65,5 +66,6 @@
 #X connect 35 0 36 1;
 #X connect 36 0 32 0;
 #X connect 36 1 33 0;
-#X connect 37 0 19 0;
+#X connect 37 0 39 0;
 #X connect 38 0 28 0;
+#X connect 39 0 19 0;
