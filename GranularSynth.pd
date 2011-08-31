@@ -2,8 +2,11 @@
 #N struct 1013-sym symbol name float on;
 #N struct 1014-symarray float x array symbols 1014-sym;
 #N struct 1014-sym symbol name float on;
-#N canvas -1036 275 976 645 10;
+#N canvas -1145 64 976 645 10;
 #X declare -lib mrpeach;
+#X declare -path grain;
+#X declare -path rjlib;
+#X declare -path misc;
 #X obj 228 41 import mrpeach;
 #X obj 429 147 Output;
 #X obj 354 147 transport;
@@ -28,7 +31,7 @@
 #X obj 453 329 r transport;
 #X obj 453 388 route play stop fastrewind;
 #X obj 453 368 spigot;
-#X obj 486 349 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 486 349 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X msg 453 416 all midinote 60 100;
 #X msg 575 416 all midinote 60 0;
@@ -45,6 +48,9 @@
 #X msg 288 333 32;
 #X msg 638 306 32 midinote 60 0;
 #X floatatom 288 355 5 1 32 0 - - -;
+#X obj 622 41 declare -path grain;
+#X obj 622 62 declare -path rjlib;
+#X obj 622 83 declare -path misc;
 #X connect 3 0 1 0;
 #X connect 4 0 1 1;
 #X connect 11 0 31 0;
