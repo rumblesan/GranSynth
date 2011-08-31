@@ -2,7 +2,7 @@
 #N struct 1005-sym symbol name float on;
 #N struct 1006-symarray float x array symbols 1006-sym;
 #N struct 1006-sym symbol name float on;
-#N canvas -1276 158 976 645 10;
+#N canvas -1444 151 976 645 10;
 #X declare -lib mrpeach;
 #X obj 68 256 sampleBank samples samplelist;
 #X obj 36 188 loadbang;
@@ -157,7 +157,7 @@
 #X obj 749 255 s voices;
 #X obj 299 547 s voices;
 #X msg 431 478 5;
-#X obj 106 121 voicebank 32 GrainPlayer;
+#X obj 106 121 voicebank 32 GrainVoice;
 #X connect 0 0 5 0;
 #X connect 0 1 30 0;
 #X connect 0 2 32 0;
